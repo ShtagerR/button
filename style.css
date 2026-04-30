@@ -1,0 +1,36 @@
+body{
+                display: flex;
+            justify-content: center;
+            align-items: center;
+           
+}
+
+.button{
+    font-family: sans-serif;
+    font-size: 18px;
+    color:white;
+    height:80px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: chartreuse;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    position: relative;
+    box-shadow: 0 10px #66cc00;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+}
+
+p{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;  
+}
+
+.button:active{
+    transform:translateY(12px) ;
+    cursor: pointer;
+    box-shadow: 0 0px #66cc00;
+    
+}

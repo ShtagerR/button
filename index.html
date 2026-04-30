@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .push-button {
+            /* Базові стилі */
+            padding: 16px 32px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            background-color: #2ecc71; /* Основний колір */
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            outline: none;
+
+            /* Створюємо "товщину" кнопки за допомогою нижньої тіні */
+            /* 0px по горизонталі, 12px вниз, 0 розмиття, темніший відтінок */
+            box-shadow: 0 12px 0 #27ae60;
+            
+            /* Важливо для плавності */
+            transition: all 0.1s ease;
+            position: relative;
+        }
+
+        /* Ефект при натисканні (активний стан) */
+        .push-button:active {
+            /* 1. Зміщуємо кнопку вниз на 12 пікселів */
+            transform: translateY(12px);
+
+            /* 2. Прибираємо тінь, бо кнопка тепер "лежить" на поверхні */
+            box-shadow: 0 0 0 #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="push-button">Натисни</button>
+
+</body>
+</html>
